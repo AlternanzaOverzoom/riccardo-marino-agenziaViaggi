@@ -2,37 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="css\homestyle.css">
-  <link rel="stylesheet" href="../lib/w3.css">
-
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-    
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = x.length} ;
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-border-red", "");
-      }
-      x[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " w3-border-red";
-    }
-  </script>
-
+  <link rel="stylesheet" href="css\carosello.css">
 </head>
 
 
@@ -44,27 +14,24 @@
     <li><a class="active" href="sign-in.html">Crea nuovo utente</a></li>
   </ul>
 
-  <div>
-  <img src="utils\images\HomePage.webp" alt="Image cover" style="width: 100%;margin: 0px;">
-  <h2 id="centered-text">VIAGGIA CON NOI</h2>
-  </div>
-      <br>
-      <hr>
-      <br>
+  
+  
+  <img src="utils\images\roma.jpeg" alt="NY"style="width:100%;height:auto;">
 
   <div id="all-elements">
       <div>
-        <img src="utils\images\photo-1575936123452-b67c3203c357.jpeg"  style="float:left;width: 30%; margin-right: 20px;">
+        <img src="utils\images\Caraibi.jpeg"  style="float:left;width: 30%; margin-right: 20px;">
         <span>
           <h2>What is Lorem Ipsum?<h2>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </span>
     </div> 
     
-    <br><br>
+    <br>
+    <br>
     
     <div>
-      <img src="utils\images\photo-1575936123452-b67c3203c357.jpeg"  style="float:right;width: 30%; margin-left: 20px;">
+      <img src="utils\images\Hawaii.avif"  style="float:right;width: 30%; margin-left: 20px;">
       <span>
         <h2>What is Lorem Ipsum?<h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
