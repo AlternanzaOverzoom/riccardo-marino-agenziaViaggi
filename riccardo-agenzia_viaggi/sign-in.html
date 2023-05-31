@@ -3,52 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css\style.css">
-</head>
-    <script>
-          function login(){
-          if(document.getElementById("username").value==localStorage.getItem("username") 
-          && document.getElementById("password").value==localStorage.getItem("password"))
-          window.location.replace("home.html");
-          else{
-            var errorP=document.getElementById("error-message");
-            errorP.style="color:red";
-            errorP.innerHTML="Errore!Username o password errati!";
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\signStyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Raleway:ital,wght@0,100;0,200;1,100&display=swap');
+    </style>
 
+      <script>
+        function showPassword(checkbox){
+            var x = document.getElementById("password");
+            if (x.type === "password") x.type = "text";
+            else x.type = "password";
+          }
+        function register(){
+            const user=document.getElementById("username").value;
+            const password=document.getElementById("password").value;
+            const error=document.getElementById("error-message");
+            if(checkData()==false)return false;
+            else{
+                localStorage.setItem("username",user);
+                localStorage.setItem("password",password);
+            }
         }
-        return false;
-          }  
-    </script>
+        function checkData(){
+            const error=document.getElementById("error-message");
+            const user=document.getElementById("username").value;
+            if(user!=localStorage.getItem("username"))  console.log("NO");
+            else{ 
+                console.log("WE");
+                error.innerHTML="UTENTE GIA' REGISTRATO!" 
+                return false;
+            }
+        }
+
+      </script>
+</head>
 <body>
-
-        <div class="parent">
-            <form onsubmit="return login()">
-
-                <img src="utils\images\logo-overzoom.png" alt="Logo" style="border-radius: 50%; width: 100px; margin-top: 15px;">
-                <h2 id="title-login">LOG IN</h2>
-
-
-                <div class="child">
-                    <img src="utils\images\user-icon.png" id="user-image">
-                    <input type="text" id="username" placeholder="username" required style="margin-top:5%;font-family: Garamond ;"><br>
-                </div>
-
-                <div class="child">
-                    <img src="utils\images\lock-icon.png" id="lock-image">
-                    <input type="password" id="password" placeholder="password" required style="margin-top:5%;font-family: Garamond ;"><br>
-                </div>
-                
-                <br>
-                <a href="sign-in.html">Crea nuovo utente</a>
-                
-                <br>
-                <p id="error-message"></p>
-                <button type="submit" id="submit-button">LOGIN</button>
+  
+    <div class="parent">
+        <div class="div1">  <h1><strong>T</strong>ravel <strong>L</strong>ogin <strong>F</strong>orm</h1></div>
+        <div class="div2"> 
+            <h2>Login Your Account</h2>
+            <form onsubmit="return register()">
+                <input type="text" name="username" placeholder="username" id="username" required><br>
+                <input type="password" name="password" placeholder="password" id="password" required><br>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" onclick="showPassword(this)"></td>
+                                <td>MOSTRA PASSWORD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p id="error-message"></p>
+                <button type="submit">SIGN-IN</button><br>
 
             </form>
-        </div>
 
-    </body>
+        </div>
+    </div>
+
+</body>
 </html>
