@@ -1,0 +1,73 @@
+.menu{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #333;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+.list-container{
+    min-width: 500px;
+    width: 35%;
+    margin-right: 15%;
+    margin-left: auto;
+    display: flex;
+}
+.menu-item{
+    width: 33%;
+    margin:auto;
+    color: white;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:hover.menu-item{
+    opacity: 0.7;
+}
+.logo{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.logo-description{
+    width: auto;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#name-agency{
+font-size: 25px;
+}
+#motto{
+    font-size: 20px;
+}
+#logo-img{    
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 2%;
+    width: 10%;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+#motto,#name-agency{
+    height: auto;
+    margin: auto;
+    font-style: normal1;
+    display: block;
+}

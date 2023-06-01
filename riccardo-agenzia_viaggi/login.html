@@ -14,8 +14,10 @@
     <script>
           function login(){
           if(document.getElementById("username").value==localStorage.getItem("username") 
-          && document.getElementById("password").value==localStorage.getItem("password"))
-          window.location.replace("home.html");
+          && document.getElementById("password").value==localStorage.getItem("password")){
+                window.location.replace("index.html");
+                localStorage.setItem("userLogged",document.getElementById("username").value);
+          }
           else{
             var errorP=document.getElementById("error-message");
             errorP.style="color:red";

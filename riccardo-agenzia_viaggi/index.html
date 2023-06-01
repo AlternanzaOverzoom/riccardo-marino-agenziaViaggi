@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css\homestyle.css">
+  <link rel="stylesheet" href="\css\menu.css">
+  <link rel="stylesheet" href="css\carousel.css">
+  <link rel="stylesheet" href="css\footer.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Quicksand:wght@300;400&family=Raleway:ital,wght@0,100;0,200;1,100&display=swap');
+  </style>
+  <script src="js\carousel.js"></script>
+</head>
+
+
+<body onload="checkLogin()">
+  <div class="menu" id="menu-container">
+    <div class="logo">
+      <img src="utils\icons\Anchor.png" alt="Logo" id="logo-img">
+      <span class="logo-description">
+        <h1 id="name-agency">TRAVEL WITH US</h1>
+        <h2 id="motto">The best travel agency in the world</h2>
+      </span>
+    </div>
+
+    <div class="list-container">
+      <a class="menu-item" href="index.html">Home Page</a>
+      <a class="menu-item" href="login.html">Cambia utente</a>
+      <a class="menu-item" href="sign-in.html">Crea nuovo utente</a>
+    </div>
+  </div>
+
+  <div class="carousel">
+    <div class="carousel-inner">
+      <img src="utils\images\Caraibi.jpeg" alt="Immagine 1">
+      <img src="utils\images\Hawaii.avif" alt="Immagine 2">
+      <img src="utils\images\New York.jpeg" alt="Immagine 3">
+      <img src="utils\images\roma.jpeg" alt="Immagine 4">
+    </div>
+    <button class="carousel-btn" onclick="changeSlide()">Avanti</button>
+  </div>
+
+  <span class="summary">
+    <h2 class="presentation">THE BEST TRAVEL AGENCY IN THE WORLD</h2>
+    <h3 class="description">TRAVEL WITH US is one of the largest and most important travel companies, offering travel services and accompanying its customers for more than 50 years in their travel plans and vacation experiences.</h3>
+  </span>
+
+    <img src="utils\images\Vesuvio.jpg" alt="Vesuvio" class="horizontal-image">
+
+    <div id="container">
+        <div id="container-options">
+            <div class="option-item">
+              <h1 class="first-title-option">1</h1>
+              <h2 class="subtitle-title-option">Your trip just a click away</h2>
+              <h3 class="description-option">You will be able to consult your reservation in real time and pay the balance of your payments.</h3>
+          </div>
+          
+          <div class="option-item">
+            <h1 class="first-title-option">2</h1>
+            <h2 class="subtitle-title-option">Make online payments</h2>
+            <h3 class="description-option">On the "My trips" page you will have the possibility to settle your payments by credit card.</h3>
+          </div>
+
+          <div class="option-item">
+            <h1 class="first-title-option">3</h1>
+            <h2 class="subtitle-title-option">Premium assistance always with you</h2>
+            <h3 class="description-option">Contact us! You will find a consultant at your disposal, to answer your questions, meeting your needs.</h3>
+          </div>
+        </div>
+    </div>
+
+    <img src="utils\images\mare.jpg" alt="Spiaggia" class="horizontal-image" style="margin-top: 0;">
+
+
+
+    <footer class="footer">
+
+      
+    </footer>
+
+
+  </body>
+</html>
+
+

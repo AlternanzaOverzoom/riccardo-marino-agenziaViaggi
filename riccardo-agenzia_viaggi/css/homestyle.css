@@ -1,76 +1,65 @@
-ul {
-    height: 55px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-h2{
-    size:20px;
-    color:#111;
-}
-
-p{
-    size:14px;
-    color:#111;
-}
-
-#all-elements{
-    margin: 15px 15%;
-}
-
-
-.slider-container
-{
-    width: 800px;
-    height: 400px;
-    background-color: yellow;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
+.summary{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    overflow: hidden;
+    margin-top: 15%;
 }
 
-.image-container
-{
-    width: 2400px;
-    background-color: red;
-    height: 400px;
-    clear: both;
+
+.presentation{
+    width:40%;
+    margin: auto;
+    margin-bottom: 1%;
+    color:#000543;;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+.description{
+    color:#000543;;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.horizontal-image{   
+    width: 100%;
     position: relative;
-   
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-    transition: left 2s;
+    left: -1px;
+    margin-top: 10%;
+    margin-bottom: 0;
+
 }
-#slider-image-1:target ~ .image-container
-{
-   left: 0px;
+#container-options{
+    width: 80%;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    min-height: 700px;
+    font-family: 'Quicksand', sans-serif;
+    
 }
-#slider-image-2:target ~ .image-container
-{
-   left: -800px;
+#container{
+    background-color: #8abde833; ;
 }
-#slider-image-3:target ~ .image-container
-{
-   left: -1600px;
+.option-item{
+    margin: auto;
+    text-align: center;
+}
+.first-title-option{
+    color: #8abde8;
+    font-size: 70px;
+}
+.subtitle-title-option{
+  color:  #000543;
+  font-size: 24px;
+}
+.description-option{
+    color: #0a0a0aa6;
+    text-align: center;
+    font-size: 15px;
 }
