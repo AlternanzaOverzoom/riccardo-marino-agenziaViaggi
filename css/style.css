@@ -53,6 +53,7 @@ a{
     border: 0px none;
     border-bottom: 1px solid #000000;
     background-color: none;
+    width: 60%;
 }
 #username::placeholder,#password::placeholder{
     color:#000000

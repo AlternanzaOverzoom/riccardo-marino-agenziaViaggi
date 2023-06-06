@@ -5,7 +5,10 @@
 
 Codice per registrazione e accesso a home page di un sito di un'agenzia viaggi
 Il sito conta un totale di 3 pagine, una di login, una si registrazione e la home page
-
+Il sito utilizza il local storage per salvare le informazioni relative i dati di accesso.
+Nel momento in cui si accede al sito l'username con cui viene effettuato l'accesso viene salvato in
+una apposita variabile nel local storage.
+In questo modo, nel momento in cui tento di accedere al sito senza accedere, la pagina viene reindirizzata alla pagina di login
 
 
 ## Visualizzazione
