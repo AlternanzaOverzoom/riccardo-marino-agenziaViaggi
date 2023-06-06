@@ -29,6 +29,35 @@
     </script>
 <body>
 
+    <div class="parent">
+        <div class="div1">  
+            <form onsubmit="return login()">
+
+            <img src="utils\icons\Anchor.png" alt="Logo" style="border-radius: 50%; width: 100px; margin-top: 15px;">
+            <h2 id="title-login">LOG IN</h2>
+
+
+            <div class="child">
+                <img src="utils\icons\user-icon.png" id="user-image">
+                <input type="text" id="username" placeholder="username" required style="margin-top:5%;font-family: Garamond ;"><br>
+            </div>
+            <br>
+            <div class="child">
+                <img src="utils\icons\lock-icon.png" id="lock-image">
+                <input type="password" id="password" placeholder="password" required style="margin-top:5%;font-family: Garamond ;"><br>
+            </div>
+            
+            <br>
+            <a href="sign-in.html">Crea nuovo utente</a>
+            
+            <br>
+            <p id="error-message"></p>
+            <button type="submit" id="submit-button">LOGIN</button>
+        </form> </div>
+        </div>
+
+
+        <!-- 
         <div class="parent">
             <form onsubmit="return login()">
 
@@ -54,6 +83,6 @@
                 <button type="submit" id="submit-button">LOGIN</button>
             </form>
         </div>
-
+    --> 
     </body>
 </html>

@@ -1,66 +1,77 @@
-#user-image,#lock-image{
-    float: left;
-    height:40px;
+body,html,.parent{
+    width: 100%;
+    height: 100%;
 }
-#error-message{
-    margin-top:50px;
-}
-
-#submit-button{
-    margin-top:5px;
-    font-size:15px;
-    width: 150px;
-    height: 75px;
-    font-family: Garamond ;
-    border: 1px solid black;
-    background-color: transparent;
-    border-radius: 15px;
-}
-
-#submit-button:hover{
-    background-color:#5c280f;
-    cursor: pointer;
-}
-a{
-    color:black;
-}
-
 .parent {
-    margin: 30px 40%;
-    padding: 45px;
-    text-align: center;
-    background: -webkit-linear-gradient(top,#d1791a,#5c280f);
-    border-radius: 60px;
-  }
-  .child {
-    vertical-align: middle;
-    display: inline-block;
-    padding: 35px;
-    vertical-align: middle;
-  }
-#title-login{
-    font-size: 30px;
-    color: black;
-    text-align: center;
-    margin-bottom: 15px;
-}
-#username,#password{  
-    background: transparent;
-    margin-top:5%;
-    font-size: 16px;
-    font-family: Garamond;
-    color: black;
-    border: 0px none;
-    border-bottom: 1px solid #000000;
-    background-color: none;
-    width: 60%;
-}
-#username::placeholder,#password::placeholder{
-    color:#000000
-}
-
-body{
-    background-image: url("https://www.newyorkwelcome.net/up/sunset1.jpg");
-    background-size: cover;
-    font-family: 'Open Sans', sans-serif;
-}
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+   
+    }
+    .child{
+        width: 60%;
+        margin: auto;
+    }
+    
+    .div1 { 
+        grid-area: 2 / 5 / 9 / 8;    
+        text-align: center;
+        background: -webkit-linear-gradient(top,#d1791a,#5c280f);
+        border-radius: 60px;
+        
+    }#user-image,#lock-image{
+        float: left;
+        height:40px;
+    }
+   
+    #error-message{
+        margin-top:50px;
+    }
+    
+    #submit-button{
+        margin-top:5px;
+        font-size:15px;
+        width: 55%;
+        height: 75px;
+        font-family: Garamond ;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 15px;
+    }
+    
+    #submit-button:hover{
+        background-color:#5c280f;
+        cursor: pointer;
+    }
+    a{
+        color:black;
+    }
+    
+    #title-login{
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #username,#password{  
+        background: transparent;
+        margin-top:5%;
+        font-size: 16px;
+        font-family: Garamond;
+        color: black;
+        border: 0px none;
+        border-bottom: 1px solid #000000;
+        background-color: none;
+        width: 50%;
+    }
+    #username::placeholder,#password::placeholder{
+        color:#000000
+    }
+    
+    body{
+        background-image: url("https://www.newyorkwelcome.net/up/sunset1.jpg");
+        background-size: cover;
+        font-family: 'Open Sans', sans-serif;
+    }
