@@ -18,10 +18,13 @@ body,html,.parent{
     .div1 { 
         grid-area: 2 / 5 / 9 / 8;    
         text-align: center;
+        min-width: 400px;
+        min-height: 700px;
         background: -webkit-linear-gradient(top,#d1791a,#5c280f);
-        border-radius: 60px;
-        
-    }#user-image,#lock-image{
+        border-radius: 60px;   
+    }
+    
+    #user-image,#lock-image{
         float: left;
         height:40px;
     }
